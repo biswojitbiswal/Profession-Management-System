@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Profession Management System</title>
+</head>
+<body>
+    <h1>New Employees</h1>
+    <form class="employee-form">
+        <h2>Employee Form</h2>
+        <div class="input-fields">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="profession">Profession: </label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+            
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            
+        </div>
+
+        <p id="message"></p>
+        <button id="add-emp">Add User</button>
+    </form>
+    
+    <h2>ADDED EMPLOYEES</h2>
+    <div class="employee-container">
+        <ul id="employee-list">
+            <li>
+                <p>ID</p>
+                <p>Name</p>
+                <p>Profession</p>
+                <p>Age</p>
+                <p>Delete</p>
+            </li>
+            <!-- <li>
+                <p>1</p>
+                <p>John</p>
+                <p>Devloper</p>
+                <p>18</p>
+                <button><i class="fas fa-trash"></i>
+                </button>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
